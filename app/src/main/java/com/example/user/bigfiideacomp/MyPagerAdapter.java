@@ -21,7 +21,7 @@ public class MyPagerAdapter extends PagerAdapter {
     public MyPagerAdapter(Context context, List<DataObject> dataObjectsList) {
         this.context = context;
         this.dataObjectsList = dataObjectsList;
-        this.layoutInflater = (LayoutInflater)this.context.getSystemService(this.context.LAYOUT_INFLATER_SERVICE);
+        this.layoutInflater = (LayoutInflater) this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
@@ -31,13 +31,13 @@ public class MyPagerAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(View view, Object object) {
-        return view == ((View)object);
+        return view == object;
     }
 
     @Override
     public Object instantiateItem(ViewGroup container, int position){
-        View view = this.layoutInflater.inflate(R.layout.idea_15_1, container, false);
-        ImageView imageView = (ImageView)view.findViewById(R.id.idea_15_z1_img);
+        View view = this.layoutInflater.inflate(R.layout.pager_item_list, container, false);
+        ImageView imageView = (ImageView) view.findViewById(R.id.pager_item_img);
         imageView.setImageResource(this.dataObjectsList.get(position).getImageId());
         container.addView(view);
         return view;
