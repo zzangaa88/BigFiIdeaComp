@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/btn_year_15"
+                style="@style/YearBtn"
+                android:background="@drawable/bc_ye_ic_15"/>
+            <ImageButton
+                android:id="@+id/btn_year_16"
+                style="@style/YearBtn"
+                android:background="@drawable/bc_ye_ic_16"/>
+            <ImageButton
+                android:id="@+id/btn_year_17"
+                style="@style/YearBtn"
+                android:background="@drawable/bc_ye_ic_17"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_vv15"
+                style="@style/VideoBtn"
+                android:background="@drawable/bc_vd_15">
+            </Button>
+            <Button
+                android:id="@+id/btn_vv16"
+                style="@style/VideoBtn"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/bc_vd_16">
+            </Button>
+            <Button
+                android:id="@+id/btn_vv17"
+                style="@style/VideoBtn"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/bc_vd_17">
+            </Button>
+"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

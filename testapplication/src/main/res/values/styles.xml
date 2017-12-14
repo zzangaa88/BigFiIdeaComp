@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="SecondButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_height">260dp</item>
+        <item name="android:onClick">secOnClick</item>
+    </style>
+
+    <style name="YearButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+    </style>
+
+    <style name="Year15" parent="YearButton">
+        <item name="android:background">@drawable/btn_year_15_click</item>
+    </style>
+    <style name="Year16" parent="YearButton">
+        <item name="android:background">@drawable/btn_year_16_click</item>
+    </style>
+    <style name="Year17" parent="YearButton">
+        <item name="android:background">@drawable/btn_year_17_click</item>
+    </style>
+
+    <style name="AnalysisButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:layout_width">135dp</item>
+        <item name="android:layout_height">135dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:onClick">AnalysisClick</item>
+    </style>
+
+    <style name="btn_vp" parent="@android:style/Widget.ImageButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:onClick">movePageOnClick</item>
+    </style>
+
+    <style name="btn_vp_left" parent="btn_vp">
+        <item name="android:background">@drawable/left_click</item>
+    </style>
+    <style name="btn_vp_right" parent="btn_vp">
+        <item name="android:background">@drawable/right_click</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="btn_back" parent="@android:style/Widget.ImageButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+</resources>

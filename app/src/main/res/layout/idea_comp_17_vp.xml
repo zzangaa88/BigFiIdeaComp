@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/bd_vp_17"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/btn_left"
+                style="@style/btn_vp_left"
+                />
+            <ImageButton
+                android:id="@+id/btn_right"
+                style="@style/btn_vp_right"
+                />
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/btn_back"
+            style="@style/btn_back"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/btn_back_click"/>
+    </FrameLayout>
+</LinearLayout>

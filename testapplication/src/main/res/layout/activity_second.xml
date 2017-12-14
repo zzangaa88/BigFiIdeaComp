@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bf_introbg"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btn_forum"
+                style="@style/SecondButton"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_forum_click" />
+
+            <ImageButton
+                android:id="@+id/btn_contest"
+                style="@style/SecondButton"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/btn_contest_click" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn_edu"
+                style="@style/SecondButton"
+                android:background="@drawable/btn_edu_click"
+                />
+            <ImageButton
+                android:id="@+id/btn_business"
+                android:layout_alignParentRight="true"
+                style="@style/SecondButton"
+                android:background="@drawable/btn_business_click" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_analysis"
+            style="@style/SecondButton"
+            android:onClick="secOnClick"
+            android:background="@drawable/btn_analysis_click" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
