@@ -33,13 +33,14 @@ public class AnalyDetail extends Activity implements View.OnClickListener{
         customPagerAdapter = new CustomPagerAdapter(getApplicationContext(), dataList(extra));
         viewPager.setAdapter(customPagerAdapter);
 
-        btn_left = (ImageButton)findViewById(R.id.left);
-        btn_rigth = (ImageButton)findViewById(R.id.right);
-        btn_back = (ImageButton)findViewById(R.id.btn_back);
+        btn_left = findViewById(R.id.left);
+        btn_rigth = findViewById(R.id.right);
+        btn_back = findViewById(R.id.btn_back);
 
         btn_left.setOnClickListener(this);
         btn_rigth.setOnClickListener(this);
         btn_back.setOnClickListener(this);
+
     }
 
     public List<DataObject> dataList(String extra) {
