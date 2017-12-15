@@ -22,14 +22,14 @@ public class IdeaCompDetail extends AppCompatActivity {
     private ImageButton btn_right;
     private ImageButton btn_back;
     private MyPagerAdapter myPagerAdapter;
-    private Intent intent = getIntent();
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.idea_comp_15_vp);
         viewPager15 = (ViewPager) findViewById(R.id.bd_vp_15);
-        List<DataObject> getDate = dateSource();
+        Intent intent = getIntent();
+        String extra = intent.getStringExtra("Year");
+        List<DataObject> getDate = dateSource(extra);
         myPagerAdapter = new MyPagerAdapter(IdeaCompDetail.this, getDate);
         viewPager15.setAdapter(myPagerAdapter);
 
@@ -69,9 +69,8 @@ public class IdeaCompDetail extends AppCompatActivity {
         }
     };
 
-    private List<DataObject> dateSource() {
+    private List<DataObject> dateSource(String extra) {
         List<DataObject> date = new ArrayList<DataObject>();
-        String extra = intent.getStringExtra("Year");
         if (extra.equals("15")) {
             date.add(new DataObject(R.drawable.bc_15_1));
             date.add(new DataObject(R.drawable.bc_15_2));

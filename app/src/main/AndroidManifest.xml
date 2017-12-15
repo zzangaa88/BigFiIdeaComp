@@ -25,6 +25,9 @@
         <activity android:name=".Year15_17"
             android:screenOrientation="landscape"></activity>
         <!-- IdeaComp ViewPager 2015 ~ 2017 -->
+        <activity
+            android:name=".IdeaCompDetail"
+            android:screenOrientation="landscape" />
         <!-- VideoView Activity -->
         <activity android:name=".Idea_15_0"
             android:screenOrientation="landscape"></activity>

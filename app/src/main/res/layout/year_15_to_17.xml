@@ -17,17 +17,14 @@
             <ImageButton
                 android:id="@+id/btn_year_15"
                 style="@style/YearBtn"
-                android:onClick="yearOnClick"
                 android:background="@drawable/bc_ye_ic_15"/>
             <ImageButton
                 android:id="@+id/btn_year_16"
                 style="@style/YearBtn"
-                android:onClick="yearOnClick"
                 android:background="@drawable/bc_ye_ic_16"/>
             <ImageButton
                 android:id="@+id/btn_year_17"
                 style="@style/YearBtn"
-                android:onClick="yearOnClick"
                 android:background="@drawable/bc_ye_ic_17"/>
         </LinearLayout>
         <LinearLayout

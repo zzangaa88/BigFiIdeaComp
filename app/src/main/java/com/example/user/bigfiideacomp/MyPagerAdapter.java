@@ -2,6 +2,7 @@ package com.example.user.bigfiideacomp;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +37,7 @@ public class MyPagerAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position){
-        View view = this.layoutInflater.inflate(R.layout.pager_item_list, container, false);
+        View view = layoutInflater.inflate(R.layout.pager_item_list, container, false);
         ImageView imageView = (ImageView) view.findViewById(R.id.pager_item_img);
         imageView.setImageResource(this.dataObjectsList.get(position).getImageId());
         container.addView(view);
@@ -45,6 +46,6 @@ public class MyPagerAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        container.removeView((View)object);
+        container.removeView((View) object);
     }
 }
