@@ -4,7 +4,6 @@
 
     <application
         android:allowBackup="true"
-        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="BIG-Fi INTRODUCE"
         android:roundIcon="@mipmap/ic_launcher_round"
