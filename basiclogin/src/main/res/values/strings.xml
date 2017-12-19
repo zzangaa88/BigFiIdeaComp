@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BasicLogin</string>
+    <color name="bg">#000</color>
+</resources>
